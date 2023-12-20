@@ -1,4 +1,4 @@
-package Java1;
+package Programs;
 
 public class Java1
 {

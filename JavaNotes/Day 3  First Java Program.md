@@ -54,6 +54,23 @@ static functions are those functions of the class which can we run or execute wi
 
 </li>
 
+<li>
+<h3>System.out.println("Hello World!");</h3> 
+Above line of code is use to print any string output on screen. Here system is class and println is the function in that class which perform printing operation where "out" is nothing but a standard output stream of system or in simpler word it is a output buffer of system.
+
+So this print function print required output in output buffer
+</li>
+
+<li><h3>Scanner input = new Scanner(System.in);</h3>Above line of code is use to get any primitive data type input in java. Here "Scanner" is the class and "input" is new object of the scanner class. 
+
+![Alt text](image-34.png)
+
+Here "System.in" represents the standard input stream of system where this function takes the inputed character here standard input stream is nothing but input buffer of the system</li>
+<br>
+
+![Alt text](image-33.png)
+
+
 
 
 

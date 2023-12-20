@@ -2,7 +2,7 @@ package Programs; // Packages are nothing but folders in which the current java 
 
 import java.util.Scanner;
 
-public class Demo {
+public class Inputs {
     public static void main(String[] args) {
         System.out.println("Hello World!");
 //        Here System is one of the class of java lang in which out is standard output stream like output buffer similar to monitor output
