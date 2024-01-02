@@ -1,4 +1,4 @@
-package Programs;
+package Programs.Functions;
 
 public class GreetFun {
     public static void main(String[] args) {
