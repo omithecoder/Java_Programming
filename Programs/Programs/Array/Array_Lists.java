@@ -34,7 +34,7 @@ public class Array_Lists {
 
         System.out.println(list);
 
-        
+
 
 
     }

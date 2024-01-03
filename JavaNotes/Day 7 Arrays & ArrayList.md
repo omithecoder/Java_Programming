@@ -159,9 +159,29 @@ System.out.println(list); // [1,2,3,4,5]
 <a href="https://www.geeksforgeeks.org/arraylist-in-java/" target="black"  >Explore more methods of ArrayList Object</a>
 
 <h2> ⚙️Internal Working of ArrayList</h2>
-<p>ArrayList Is working 
+<p>ArrayList Is working is as same as array but one difference is in variable length property of ArrayList </p>
+
+<p>ArrayList not having infinite amount of space Arraylist != Array[♾️] </p>
+
+<p>Here first array created into the heap of size = initialCapacity But as the given array is filled half the new array of double size is created and all elements in previous array get copied inside the new array and this occurs continuously so due to this we fill that ArrayList Have infinite length</p>
+
+<p>ArrayList provide space if & only if when there is a space in memory</p>
+
+![Alt text](image-78.png)
 
 
+<h2>⭐ MultiDimensional ArrayList</h2>
+<p>It is nothing but extended version of multidimensional array it nothing but a multidimensional array but with extra feature of ArrayList</p>
+
+<p>It is nothing but ArrayList of ArrayLists</p>
+
+<h3>Syntax : </h3>
+
+```
+ArrayList<ArrayList<Integer>> list = new ArrayList<>(5);
+```
+
+![Alt text](image-80.png)
 
 
 
