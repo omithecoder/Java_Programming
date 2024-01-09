@@ -1,6 +1,6 @@
 package Programs.Array;
 
-public class characterArray {
+public class RotateArrayByK {
     public static void main(String[] args) {
         char[] name = {'o','m','k','a','r'};
 
