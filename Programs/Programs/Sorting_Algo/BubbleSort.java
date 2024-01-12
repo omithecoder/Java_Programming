@@ -1,4 +1,4 @@
-package Programs.BubbleSort;
+package Programs.Sorting_Algo;
 
 import java.util.Arrays;
 

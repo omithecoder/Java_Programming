@@ -90,6 +90,7 @@ while(start<=end)
 <li>If neither of the above conditions are met, set start to mid+1.</li>
 <li>Repeat the loop until start is not less than end.</li>
 <li>Return start as the index of the peak element.</li>
+</ol>
 
 ```
     static int peakelement(int[] arr) {
@@ -120,4 +121,62 @@ while(start<=end)
 
 ![Alt text](image-90.png)
 <p>Here 7 is the pivot </p>
+
+<ol>
+
+
+
+1. Initialize an array `arr` with the elements.
+2. Initialize two pointers, `start` and `end`, to the start and end of the array respectively.
+3. Check if the array is not rotated by comparing the first and last element. If the first element is less than the last element, then the array is not rotated and return -1 as there is no pivot.
+4. If the array is rotated, enter a loop that continues until `start` is less than or equal to `end`.
+5. Calculate the middle index `mid` as `start + (end-start)/2`.
+6. Check if the element at `mid` is greater than the element at `mid+1`. If it is, then `mid` is the pivot index, print `mid` and break the loop.
+7. Check if the element at `mid` is less than the element at `mid-1`. If it is, then `mid-1` is the pivot index, print `mid-1` and break the loop.
+8. If neither of the above conditions are met, check if the start element is greater than the mid element. If it is, set `end` to `mid-1`. Otherwise, set `start` to `mid`.
+9. Repeat the loop until `start` is not less than or equal to `end`.
+
+
+</ol>
+
+```
+package Programs.BinarySearch;
+
+public class FindPivot_inDuplicateValues {
+    public static void main(String[] args) {
+        int[] arr = {4,4,5,5,3,4,4};
+//        {1,2,2,3,4,4,5,6,6}
+        int start = 0 ;
+        int end= arr.length-1;
+        if(arr[start]<arr[end])
+        {
+            System.out.println(-1);
+        }
+        else
+        {
+        while(start<=end) {
+            int mid = start + (end - start) / 2;
+            if (mid < end && arr[mid] > arr[mid + 1]) {
+                System.out.println(mid);
+                break;
+            }
+            if (mid > start && arr[mid - 1] > arr[mid]) {
+                System.out.println(mid - 1);
+                break;
+            } else if (arr[start] > arr[mid]) {
+                end = mid - 1;
+            } else if (arr[start] < arr[mid]) {
+                start = mid;
+            }
+        }
+
+        }
+
+    }
+
+}
+
+
+```
+
 

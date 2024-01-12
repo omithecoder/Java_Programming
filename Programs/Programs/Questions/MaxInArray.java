@@ -7,7 +7,7 @@ public class MaxInArray {
         System.out.println("Maximum Element in Between 0-2 : "+MaxInRange(arr,0,2));
     }
 
-    static int Max(int[] arr)
+    public static int Max(int[] arr)
     {
         int max = arr[0];
         for(int i=0;i<arr.length;i++){

@@ -1,10 +1,16 @@
 package Programs.Questions;
 
 public class test {
+    static void swap (Integer x, Integer y) {
+        Integer t = x;
+        x = y;
+        y = t;
+    }
+
     public static void main(String[] args) {
-        int c = 1;
-        int l=c;
-        c=9;
-        System.out.println(l);
+        Integer a = 1;
+        Integer b = 2;
+        swap(a, b);
+        System.out.println("a=" + a + " b=" + b);
     }
 }
