@@ -9,9 +9,7 @@
 <p>Means here we sort our array by sorting multiple unsorted sub array of that given array</p>
 
 ![Alt text](image-99.png)
-
 ![Alt text](image-100.png)
-
 ![Alt text](image-101.png)
 
 <h2> 💻 Algorithm</h2>
