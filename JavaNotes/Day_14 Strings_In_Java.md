@@ -195,6 +195,54 @@ public class StringBuilder {
 
 ```
 
+<h1>String Methods</h1>
+
+![Alt text](image-118.png)
+![Alt text](image-119.png)
+![Alt text](image-120.png)
 
 
+<br>
+<br>
+<br>
+<h1>StingBuffer Methods</h1>
+
+<table class="alt">
+<tbody><tr><th>Modifier and Type</th><th>Method</th><th>Description</th></tr>
+<tr><td>public synchronized StringBuffer</td><td>append(String s)</td><td> It is used to append the specified string with this string. The append() method is overloaded like append(char), append(boolean), append(int), append(float), append(double) etc.</td></tr>
+<tr><td>public synchronized StringBuffer </td><td>insert(int offset, String s)</td><td> It is used to insert the specified string with this string at the specified position. The insert() method is overloaded like insert(int, char), insert(int, boolean), insert(int, int), insert(int, float), insert(int, double) etc.</td></tr>
+<tr><td>public synchronized StringBuffer </td><td>replace(int startIndex, int endIndex, String str)</td><td> It is used to replace the string from specified startIndex and endIndex.</td></tr>
+<tr><td>public synchronized StringBuffer </td><td>delete(int startIndex, int endIndex)</td><td> It is used to delete the string from specified startIndex and endIndex.</td></tr>
+<tr><td>public synchronized StringBuffer </td><td>reverse()</td><td> is used to reverse the string.</td></tr>
+<tr><td>public int </td><td>capacity()</td><td> It is used to return the current capacity.</td></tr>
+<tr><td>public void </td><td>ensureCapacity(int minimumCapacity)</td><td> It is used to ensure the capacity at least equal to the given minimum.</td></tr>
+<tr><td>public char </td><td>charAt(int index)</td><td> It is used to return the character at the specified position.</td></tr>
+<tr><td>public int </td><td>length()</td><td> It is used to return the length of the string i.e. total number of characters.</td></tr>
+<tr><td>public String </td><td>substring(int beginIndex)</td><td> It is used to return the substring from the specified beginIndex.</td></tr>
+<tr><td>public String </td><td>substring(int beginIndex, int endIndex)</td><td> It is used to return the substring from the specified beginIndex and endIndex.</td></tr>
+</tbody></table>
+
+
+
+
+
+<br>
+<br>
+<br>
+
+<h1>StringBuilder Methods</h1>
+<table class="alt">
+<tbody><tr><th>Method</th><th>Description</th></tr>
+<tr><td>public StringBuilder append(String s)</td><td> It is used to append the specified string with this string. The append() method is overloaded like append(char), append(boolean), append(int), append(float), append(double) etc.</td></tr>
+<tr><td>public StringBuilder insert(int offset, String s)</td><td> It is used to insert the specified string with this string at the specified position. The insert() method is overloaded like insert(int, char), insert(int, boolean), insert(int, int), insert(int, float), insert(int, double) etc.</td></tr>
+<tr><td>public StringBuilder replace(int startIndex, int endIndex, String str)</td><td> It is used to replace the string from specified startIndex and endIndex.</td></tr>
+<tr><td>public StringBuilder delete(int startIndex, int endIndex)</td><td> It is used to delete the string from specified startIndex and endIndex.</td></tr>
+<tr><td>public StringBuilder reverse()</td><td> It is used to reverse the string.</td></tr>
+<tr><td>public int capacity()</td><td> It is used to return the current capacity.</td></tr>
+<tr><td>public void ensureCapacity(int minimumCapacity)</td><td> It is used to ensure the capacity at least equal to the given minimum.</td></tr>
+<tr><td>public char charAt(int index)</td><td> It is used to return the character at the specified position.</td></tr>
+<tr><td>public int length()</td><td> It is used to return the length of the string i.e. total number of characters.</td></tr>
+<tr><td>public String substring(int beginIndex)</td><td> It is used to return the substring from the specified beginIndex.</td></tr>
+<tr><td>public String substring(int beginIndex, int endIndex)</td><td> It is used to return the substring from the specified beginIndex and endIndex.</td></tr>
+</tbody></table>
 
