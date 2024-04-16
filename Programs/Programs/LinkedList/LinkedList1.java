@@ -16,12 +16,13 @@ class Node
 public class LinkedList1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        int listSize=0;
         Node head = null;
         Node n[] = new Node[100];
         int counter = 0;
         boolean loop = true;
         while(loop) {
-            System.out.println("\n1)Create List\n2)Insert Element\n3)Display List\n4)CheckHasCycle\n5)Exit\n");
+            System.out.println("\n1)Create List\n2)Insert Element\n3)Display List\n4)CheckHasCycle\n5)Delete Nth node from End\n6)Exit\n");
             int input = in.nextInt();
             switch (input)
             {
@@ -31,6 +32,7 @@ public class LinkedList1 {
                         System.out.println("Enter the number : ");
                         int val = in.nextInt();
                         head = new Node(val);
+                        listSize++;
                     }
                     else
                     {
@@ -56,7 +58,9 @@ public class LinkedList1 {
                         q.next=n[counter];
                         System.out.println("Node Successfully Inserted!");
                         counter++;
+                        listSize++;
                     }
+
                     break;
 
                 case 3:
@@ -101,6 +105,41 @@ public class LinkedList1 {
 
 
                 case 5:
+                    System.out.println("Enter the number of node which you want to delete from end");
+                    int N = in.nextInt();
+                    if(listSize==1 && N==1)
+                    {
+                        head=null;
+                    }
+                    else if(N==1)
+                    {
+
+                        Node Q = head;
+                        while (Q.next.next!=null) {
+                            Q = Q.next;
+
+                        }
+                        Q.next = null;
+
+                    }
+                    else {
+                        N = listSize - N - 1;
+                        Node Q = head;
+                        while (N != 0) {
+                            Q = Q.next;
+                            N--;
+                        }
+                        Node temp = Q.next.next;
+
+                    }
+
+
+                    break;
+
+
+
+
+                case 6:
                     loop=false;
                     System.out.println("Thank You Visit Again!");
                     break;

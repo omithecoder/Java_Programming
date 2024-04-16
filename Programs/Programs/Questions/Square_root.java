@@ -2,7 +2,7 @@ package Programs.Questions;
 
 public class Square_root {
     public static void main(String[] args) {
-        int n = 2147395599;
+        int n = 16;
         long s = 0;
         long e = n/2;
         long mid=0;
@@ -25,7 +25,7 @@ public class Square_root {
                 s=mid+1;
             }
         }
-        System.out.println(mid);
+
         if((mid*mid)>n)
         {
             System.out.println(mid-1);
