@@ -324,6 +324,8 @@ Student som = new Student();
 om = som; ❌ // cannot reinitialise the object
 ```
 
+![alt text](image-89.png)
+
 <h2>Garbage Collector🗑️</h2>
 <p>Java have inbuilt garbage collector which clean the memory frequently after some time</p>
 <p>Java not have a Destructer which help to delete or remove the created object from the heap memory</p>
